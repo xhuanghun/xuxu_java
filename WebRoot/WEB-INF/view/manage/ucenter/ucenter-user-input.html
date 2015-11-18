@@ -1,0 +1,23 @@
+<#include "/WEB-INF/view/base/inc.html"/>
+
+<form class="form-horizontal" role="form">
+	<input type="hidden" name="row.id" value="${(row.id)!}"/>
+	<@bsinput title='用户类型' input=false>
+		<@bsradios name='row.ucenter_user_type' ck='${(row.ucenter_user_type)!"010102"}' list=usertypes/>
+	</@bsinput>
+	<#if (row.id)??>
+		<@bsinput title='用户名' 	 	name='row.ucenter_user_name' 		value='${(row.ucenter_user_name)!}' dis=true/>
+	<#else>
+		<@bsinput title='用户名' 	 	name='row.ucenter_user_name' 		value='${(row.ucenter_user_name)!}' />
+		<@bsinput title='用户密码' 	name='row.ucenter_user_password' 	value='${(row.ucenter_user_password)!}'/>
+	</#if>
+	<@bsinput title='用户手机' 	 	name='row.ucenter_user_mobi' 		value='${(row.ucenter_user_mobi)!}'/>
+	<@bsinput title='用户手机验证码'	name='row.ucenter_user_mobi_code' 	value='${(row.ucenter_user_mobi_code)!}'/>
+	<@bsinput title='用户手机验证码确认' input=false>
+		<@bsradios name='row.ucenter_user_mobi_code_confirm' ck='${(row.ucenter_user_mobi_code_confirm)!"000102"}' list=yesnos/>
+	</@bsinput>
+	<@bsinput title='用户邮箱' 	 	name='row.ucenter_user_mail' 		value='${(row.ucenter_user_mail)!}'/>
+	<@bsinput title='用户邮箱确认' input=false>
+		<@bsradios name='row.ucenter_user_mail_confirm' ck='${(row.ucenter_user_mail_confirm)!"000102"}' list=yesnos/>
+	</@bsinput>
+</form>

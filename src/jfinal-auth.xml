@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<auth>
+	<login>
+		<url>/login</url>
+		<url>/login/login</url>
+		<url>/login/logout</url>
+	</login>
+	<!-- <reg>
+		<url>/reg</url>
+		<url>/reg/reg</url>
+		<url>/reg/regConfirm</url>
+	</reg> -->
+	<error>
+		<url>/error/auth</url>
+	</error>
+	<home>
+		<url>/version</url>
+		<url>/link</url>
+		<url>/donate</url>
+		<url>/me</url>
+	</home>
+	<!-- <weixin>
+		<url>/weixin</url>
+		<url>/weixin/check</url>
+	</weixin> -->
+	<blog>
+		<url>/blog/list</url>
+		<url>/blog/detail</url>
+	</blog>
+	<book>
+		<url>/book</url>
+		<url>/book/detail</url>
+		<url>/book/chapterDetail</url>
+	</book>
+	<bootstrapQ>
+		<url>/bootstrapQ</url>
+		<url>/bootstrapQ/docs</url>
+		<menudemo>
+			<url>/other/menu</url>
+			<url>/other/menu/tree</url>
+			<url>/other/menu/add</url>
+			<url>/other/menu/savep</url>
+			<url>/other/menu/save</url>
+			<url>/other/menu/del</url>
+		</menudemo>
+	</bootstrapQ>
+	<project>
+		<url>/project</url>
+		<url>/jfinalQ</url>
+		<url>/dishi</url>
+		<url>/shisui</url>
+	</project>
+</auth>

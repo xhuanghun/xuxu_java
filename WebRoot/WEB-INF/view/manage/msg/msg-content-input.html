@@ -1,0 +1,13 @@
+<#include "/WEB-INF/view/base/inc.html"/>
+
+<form class="form-horizontal" role="form">
+	<input type="hidden" name="row.id" value="${(row.id)!}"/>
+	<@bsinput title='消息类型' name='row.msg_content_type' value='${(row.msg_content_type)!}'/>	
+	<@bsinput title='消息文本内容' name='row.msg_content_txt' value='${(row.msg_content_txt)!}'/>	
+	<@bsinput title='消息多媒体内容' name='row.msg_content_media' value='${(row.msg_content_media)!}'/>	
+	<@bsinput title='消息撤回标志' name='row.msg_content_del' value='${(row.msg_content_del)!}'/>	
+		
+		
+		
+		
+</form>
