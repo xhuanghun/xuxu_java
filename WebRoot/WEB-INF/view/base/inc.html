@@ -51,6 +51,14 @@
 		
 		<!-- fill -->
 		<link rel="stylesheet" href="${base}/WUI/css/qiao.css">
+		<style type="text/css">
+			html,body {height: 100%;}
+			#wrap {min-height: 100%;height: auto !important;height: 100%;margin: 0 auto -60px;}
+			#push,#footer {height: 60px;}
+			#footer {background-color: #f5f5f5;text-align: center;}
+			@media ( max-width : 767px) {#footer {margin-left: -20px;padding-left: 20px;}}
+			.table-responsive th,.table-responsive td {white-space: nowrap;}
+		</style>
 
 		<!-- base -->
 		<script type="text/javascript">var base = '${base}';</script>
@@ -68,7 +76,7 @@
 		
 		<!-- qiao.js -->
 		<script type="text/javascript" src="${base}/WUI/qiao.js"></script>
-		<script type="text/javascript" src="${base}/WUI/web/web.js"></script>
+		<script type="text/javascript" src="${base}/WUI/web.js"></script>
 		
 		<!-- user js -->
 		<#if user??>
